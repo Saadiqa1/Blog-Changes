@@ -1,0 +1,71 @@
+@import "header.css";
+@import "footer.css";
+@import "blog.css";
+@import "sidebar.css";
+@import "content.css";
+
+.layout {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 250px 600px;
+  grid-gap: 10px;
+  grid-template-areas:
+    "hd hd hd hd"
+    "sd main main main"
+    "ft ft ft ft";
+  padding: 20px;
+  border: none;
+}
+
+.sidebar {
+  grid-area: sd;
+  padding: 15px;
+  border: 10px solid rgb(106, 243, 177);
+  color: black;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+li {
+  display: list-item;
+  padding: 20px;
+  border: 2px solid lightgrey;
+  justify-content: space-around;
+}
+
+@media screen (max-width: 767px) {
+  .layout {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 850px;
+    grid-template-rows: 250px 1fr 1fr;
+    grid-template-areas:
+      "hd"
+      "sd"
+      "main"
+      "ft";
+    border: 10px solid rgb(132, 97, 238);
+  }
+}
+
+@media screen (min-width: 767px) and (max-width: 1023px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas:
+      "hd hd"
+      "sd sd"
+      "main main"
+      "ft ft";
+    border: 10px rgb(132, 97, 238);
+  }
+}

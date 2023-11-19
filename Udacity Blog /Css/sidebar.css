@@ -1,0 +1,16 @@
+.sidebar{
+    grid-area: sd;
+    padding:15px;
+    border: 10px solid rgb(106, 243,177);
+    color: black;
+    text-align: center;}
+
+ul  {list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;}
+
+li { display: list-item;
+    padding: 20px;
+    border: 2px solid lightgrey;
+    justify-content: space-around;}
