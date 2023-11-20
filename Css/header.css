@@ -1,0 +1,9 @@
+.header {
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  grid-area: hd;
+  font-size: xx-large;
+  color: rgb(225, 164, 164);
+  border: 10px solid black;
+}
